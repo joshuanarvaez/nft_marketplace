@@ -5,7 +5,7 @@
 @tailwind utilities;
 
 .nft-gradient {
-   background: linear-gradient(101.12deg, #EB1484 27.35%, #C91CC3 99.99%, #C81CC5 100%, #C81CC5 100%);
+   background: linear-gradient(101.12deg, #11998e 27.35%, #26c685 99.99%, #38ef7d 100%, #38ef7d 100%);
 }
 
 .white-bg {
@@ -49,7 +49,7 @@
 }
   
 .fa-moon {
-    color: pink;
+    color: #26c685 ;
     font-size: 9px;
 }
   
