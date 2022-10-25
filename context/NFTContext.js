@@ -11,14 +11,15 @@ export const NFTContext = React.createContext();
 const fetchContract = (signerOrProvider) => new ethers.Contract(MarketAddress, MarketAddressABI, signerOrProvider);
 
 export const NFTProvider = ({ children }) => {
-  const nftCurrency = 'ETH';
+  const nftCurrency = 'MATIC';
   const [currentAccount, setCurrentAccount] = useState('');
   const [isLoadingNFT, setIsLoadingNFT] = useState(false);
 
   const fetchNFTs = async () => {
     setIsLoadingNFT(false);
+    const { NEXT_PUBLIC_API_URL_ALCHEMY } = process.env;
 
-    const provider = new ethers.providers.JsonRpcProvider();
+    const provider = new ethers.providers.JsonRpcProvider(NEXT_PUBLIC_API_URL_ALCHEMY);
     const contract = fetchContract(provider);
 
     const data = await contract.fetchMarketItems();
