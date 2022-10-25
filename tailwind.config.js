@@ -1,9 +1,9 @@
 module.exports = {
-  content: [
+  purge: [
     './pages/**/*.{js,ts,jsx,tsx}',
     './components/**/*.{js,ts,jsx,tsx}',
   ],
-  darkMode: 'class',
+  darkMode: 'class', // or 'media' or 'class'
   theme: {
     extend: {
       colors: {
@@ -16,7 +16,7 @@ module.exports = {
         'nft-black-2': '#1B1A21',
         'nft-black-3': '#2A2D3A',
         'nft-black-4': '#24252D',
-        'nft-green-1': '#26c685 ',
+        'nft-red-violet': '#DA18A3',
         'file-active': '#2196f3',
         'file-accept': '#00e676',
         'file-reject': '#ff1744',
